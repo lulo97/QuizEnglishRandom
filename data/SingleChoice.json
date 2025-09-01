@@ -1,0 +1,8 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "answers": ["Berlin", "Madrid", "Paris", "Rome"],
+    "correct_answer": "Paris",
+    "explanation": "Paris is the capital and most populous city of France."
+  }
+]

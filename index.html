@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    This is random english quiz application 2!
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Preact App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module">
+      import { h, render } from "https://esm.sh/preact";
+      import htm from "https://esm.sh/htm";
+      import { App } from "./App.js"
+
+      // Initialize htm with Preact
+      const html = htm.bind(h);
+
+      render(html`<${App} />`, document.getElementById("app"));
+    </script>
+  </body>
 </html>
